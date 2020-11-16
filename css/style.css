@@ -109,7 +109,7 @@ nav:after {
 /* Removing padding, margin and "list-style" from the "ul",
  * and adding "position:reltive" */
 nav ul {
-	float: right;
+	float: left;
 	padding:0;
 	margin:0;
 	list-style: none;
@@ -119,7 +119,7 @@ nav ul {
 /* Positioning the navigation items inline */
 nav ul li {
 	margin: 0px;
-	display:inline-block;
+	display:block;
     float: left;
 	}
 
@@ -192,8 +192,8 @@ nav ul ul ul li {
 }
 
 .imgsize{
-	width:800px;
-	height:250px;
+	width:auto;
+	height:300px;
 }
 
 .imgsize1{
@@ -405,7 +405,7 @@ li > a:only-child:after { content: ''; }
 
 /*-- banner --*/
 .banner{
-	background:url(../images/banner1.jpg) no-repeat center;
+	background:url(../images/me.jpg) no-repeat center;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -439,7 +439,7 @@ li > a:only-child:after { content: ''; }
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 .w3layouts_banner_margin {
-    padding: 12em 8em 0em;
+    padding-top: 12em;
 }
 
 .w3pvt_banner_info h4 {
@@ -752,7 +752,7 @@ a.work:hover,a.hire {
 
 /*-- blog -*/
 .blog {
-	background-image: url(https://www.elsetge.cat/myimg/f/162-1621790_high-quality-wallpapers-inbox-16001000-windows-nature-wallpapers.jpg);
+	background-image: url(/images/blog.jpg);
 	 background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -805,7 +805,8 @@ p.left-grid-blog  {
     float: right;
 }
 .blog-grid1 {
-    padding: 2em;
+	padding: 2em;
+	margin-left: 2em;
     background: #fff;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;

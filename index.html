@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
 <title>Dr Kiran Sreevalsan</title>
-<link rel = "icon" type = "image/png" href = "images/banner.jpg">
+<link rel = "icon" type = "image/png" href = "images/me.jpg">
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
@@ -34,7 +34,7 @@
 	
 	<!--web font--><link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 	<!--//web font-->
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
 <header>	
 	<div class="container" id="home">
 				<!-- nav -->
-				<nav class="py-4">
+				<nav class="py-4 mr-auto">
 				<label for="drop" class="toggle">Menu</label>
 				<input type="checkbox" id="drop" />
 					<ul class="menu mt-2">
@@ -66,11 +66,11 @@
 	<div class="banner-layer">
 		<div class="container">
 			<div class="row w3pvt_banner_info">
-				<div class="col-md-5 w3layouts_banner_margin">
+				<div class="col-md-5 w3layouts_banner_margin ml-auto">
 					<h3 class="editContent">My name is </h3>
 					<h2 class="editContent">Kiran<br>Sreevalsan</h2>
 					<h4>Ayurvedic Specialist</h4>
-					<p>Specialist in <strong>Pulse Diagnosis</strong>;<br> A technique to gain information about the physical constitution and health of their patient.</p>
+					<p>Specialist in <strong>Pulse Diagnosis</strong>;<br> A technique to gain information <br>about the physical constitution and <br>health of the patient.</p>
 					<a href="#about"> Read More </a>
 					<a href="#contact"> Contact Me </a>
 				</div>
@@ -86,13 +86,13 @@
 		<h3 class="heading">About Me</h3>
 		<div class="row about-grids">
 			<div class="col-lg-4 my-auto">
-				<p>Kiran Sreevalsan received his <strong>Bachelor of Ayurvedic Medicine and Surgery</strong> (BAMS) specializing in<strong> Pulse Diagnosis</strong> from Sri Sri College of Ayurvedic Science in Bangalore. He was head of the Sri Sri Ayurveda Center in Kerala for five years, where he was a much sought-after physician with sometimes 60 patients a day. </p>
+				<p>Kiran Sreevalsan received his <strong>Bachelor of Ayurvedic Medicine and Surgery</strong> (BAMS) and specialized in<strong> Pulse Diagnosis</strong> from Sri Sri College of Ayurvedic Science in Bangalore. He was the head of Sri Sri Ayurveda Center in Kerala for five years, where he was a much sought-after physician with 60 patients a day. </p>
 			</div>
 			<div class="col-lg-4 col-md-6 my-lg-0 my-5">
-				<img src="images/me.jpg" alt="" class="img-fluid" />
+				<img src="images/banner1.jpg" alt="" class="img-fluid" />
 			</div>
 			<div class="col-lg-4 bar-grids my-auto">
-			<p>At the request of <strong>Sri Sri Ayurveda</strong> Netherlands he came to <strong>Europe</strong> where he gives consultations in the Netherlands, France, Belgium and Spain. In addition, he regularly gives lectures in which he explains clearly about the basic principles of Ayurveda. In 2019 he spoke by invitation at the <strong>European Parliament in Brussels</strong> and for the <strong>United Nations in Geneva</strong>.</p>
+			<p>In 2014, he was invited to work for <strong>Sri Sri Ayurveda Netherlands</strong>. He also had consultations in Belgium,France & Spain. In addition, he regularly gives lectures in which he explains clearly about the basic principles of Ayurveda. In 2014, he represented Ayurveda and its importance in <strong>United Nations, Geneva</strong> and in 2019 he was invited to the <strong>European Parliament in Brussels,</strong>to speak about Ayurveda.</p>
 			</div>
 		</div>
 	</div>
@@ -139,7 +139,7 @@
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
-				<img src="https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/53052564_10213104935210176_3620059966217388032_o.jpg?_nc_cat=104&_nc_sid=110474&_nc_ohc=Yp1i2AGHnocAX_cm194&_nc_ht=scontent-amt2-1.xx&oh=b83edd2f49f5a84329b8594dc2592ae5&oe=5ED43CF5" alt=" " class="img-fluid imgsize" />
+				<img src="/images/parl.jpg" alt=" " class="img-fluid imgsize" />
 				<div class="exp wthree">	
 					<h4>European Parliament <span>2019</span></h4>
 					<div class="clearfix"></div>
@@ -155,12 +155,9 @@
 <section class="blog py-5" id="blog">
 	<div class="container py-3">
 		<h3 class="heading">Blog</h3>
-		<div class="row blog-grids">
-			<div class="col-lg-7">
-				<h4 class="left-grid-blog">I write beautiful things</h4>
-				<p class="left-grid-blog">Some handpicked articles:</p>
-			</div>
-		</div>
+		<h4 class="text-center text-white mt-5">I write beautiful things</h4>
+		<p class="text-center text-white">Some handpicked articles:</p>
+	</div>
 		<div class="row">
 			<div class="col-lg-4 col-md-6 w3ls">
 				<div class="blog-grid1">
@@ -268,7 +265,7 @@
 				</div>
 			</div>
 			<div class="col-lg-7 mt-lg-0 mt-5 contact-right">
-				<form action="/index.html" method="GET">
+				<form action="" id="submit-form">
 					<label><span class="fa mr-2 fa-user" aria-hidden="true"></span> Name</label>
 					<input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
 					<div class="clearfix"></div>
@@ -350,6 +347,24 @@
 		</div>
 	</div>
 <!-- //popup for gallery -->
+<script>
+	$("#submit-form").submit((e)=>{
+		e.preventDefault()
+		$.ajax({
+			url:"https://script.google.com/macros/s/AKfycbxlHgP7TG3APbzhvbKBFBAOix-2XamXMeV6tUSUHA/exec",
+			data:$("#submit-form").serialize(),
+			method:"post",
+			success:function (response){
+				alert("Form submitted successfully")
+				window.location.reload()
+				//window.location.href="https://google.com"
+			},
+			error:function (err){
+				alert("Something Error")
 
+			}
+		})
+	})
+</script>
 </body>
 </html>
