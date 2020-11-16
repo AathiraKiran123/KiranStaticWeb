@@ -752,7 +752,7 @@ a.work:hover,a.hire {
 
 /*-- blog -*/
 .blog {
-	background-image: url(/images/blog.jpg);
+	background-image: url(images/blog.jpg);
 	 background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
